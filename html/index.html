@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Wikipedia Viewer</title>
+  <meta name="author" content="Anthony Martinovic">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS links -->
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!-- bootstrap(CDN) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- main -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- responsive -->
+  <link rel="stylesheet" href="../css/responsive.css">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trocchi">
+</head>
+<body>
+  <div id="mask">
+    <h4>Loading...</h4>
+  </div>
+  <div class="container">
+    <div id="searchBar">
+      <div id="form-group">
+        <div class="row row1">
+          <div class="col-md-8">
+            <input id="searchField" type="text" class="form-control" placeholder="Explore Wikipedia..." value="">
+          </div>
+          <div class="col-md-4">
+            <button id="buttonRight" type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="col-md-6">
+            <button id="buttonLeft" type="button" class="btn btn-default" disabled>Reset</button>
+          </div>
+          <div class="col-md-6">
+            <button id="buttonTop" type="button" class="btn btn-default">Surprise Me!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="results">
+      <!-- JS CODE -->
+    </div>
+    <div id="queryButtonsDiv">
+      <div class="row row3">
+        <div class="col-md-6">
+          <button id="backButton" type="button" class="queryButton btn btn-default" disabled>Back</button>
+        </div>
+        <div class="col-md-6">
+          <button id="nextButton" type="button" class="queryButton btn btn-default" disabled>Next</button>
+        </div>
+      </div>
+    </div>
+    <div id="pageCounter">
+      <span>Page 1 of 10</span>
+    </div>
+  </div>
+
+
+
+  <!-- js links -->
+  <!-- jQuery(CDN) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- jQuery-ui(CDN) -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <!-- bootstrap(CDN) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- main -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
